@@ -1,0 +1,7 @@
+# {config_dir}/.zest.yml
+
+# file for zest config
+file: bootstrap.yml
+
+# pass files through erb
+erb: false

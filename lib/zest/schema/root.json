@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {
+    "file": { "type": "string" },
+    "erb":  { "type": "bool"   }
+  },
+  "additionalProperties": false
+}

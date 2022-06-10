@@ -1,0 +1,11 @@
+# $XDG_CONFIG_DIR/zest/config.yml
+# $XDG_CONFIG_DIR is usually ~/.config
+
+# force links and copies
+force: true
+
+# verbose errors
+verbose: false
+
+# show error on non-zero exit
+shell_error: true

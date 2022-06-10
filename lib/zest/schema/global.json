@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "properties": {
+    "force":       { "type": "bool" },
+    "verbose":     { "type": "bool" },
+    "shell_error": { "type": "bool" }
+  },
+  "additionalProperties": false
+}

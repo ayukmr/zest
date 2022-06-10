@@ -1,0 +1,49 @@
+# {config_dir}/subfolder/{dir_file}
+# dir_file is defined in {config_dir}/bootstrap.yml
+
+config:
+  # ensure dirs exist
+  dirs:
+    - dir
+
+  # create files
+  files:
+    - file
+    - file: text
+
+  # link files
+  link:
+    - dest: src
+
+  # copy files
+  copy:
+    - dest: src
+
+  # run shell command
+  shell:
+    - command
+    - command: description
+
+  # test using shell test
+  test:
+    - '[[ ! -d ~/dir ]]':
+      shell:
+        - echo ~/dir does not exist
+
+packages:
+  # setup hash
+  setup:
+    shell:
+      - echo packages setup
+
+  packages:
+    # install packages with command
+    - command:
+      - package
+
+# misc scripts
+scripts:
+  # folder:script
+  script:
+    shell:
+      - echo folder:script
