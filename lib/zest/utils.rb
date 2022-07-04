@@ -38,7 +38,7 @@ end
 
 # get config path
 def config_path
-  Pathname('.').ascend do |dir|
+  Pathname(File.expand_path('.')).ascend do |dir|
     return dir if exists?(File.join(dir, '.zest.yml'))
   end
 
