@@ -21,7 +21,7 @@ module Zest
         unless Zest::Schema.bootstrap?(@data)
     rescue Psych::Exception => error
       # catch errors
-      error(error, 1)
+      error("cannot parse #{name} bootstrap: #{error}", 1)
     end
 
     # get yaml name
