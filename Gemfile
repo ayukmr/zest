@@ -1,19 +1,19 @@
 source 'https://rubygems.org'
 
 # shell
-gem 'open3',      '~> 0.1'
-gem 'shellwords', '~> 0.1'
+gem 'open3'
+gem 'shellwords'
 
 # files
-gem 'fileutils', '~> 1.6'
-gem 'xdg',       '~> 3.1'
+gem 'fileutils'
+gem 'xdg'
 
 # data
-gem 'erb',         '~> 2.2'
-gem 'json',        '~> 2.6'
-gem 'json-schema', '~> 3.0'
-gem 'psych',       '~> 4.0'
+gem 'erb'
+gem 'json'
+gem 'json-schema'
+gem 'psych'
 
 # tty toolkit
-gem 'tty-prompt',  '~> 0.23'
-gem 'tty-spinner', '~> 0.9'
+gem 'tty-prompt'
+gem 'tty-spinner'
