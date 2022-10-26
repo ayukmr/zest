@@ -17,11 +17,11 @@ module Zest
         @data = Psych.load_file(@file)
       end
 
-      error("bootstrap for #{name} does not conform to schema", 1) \
+      error "bootstrap for #{name} does not conform to schema", 1 \
         unless Zest::Schema.bootstrap?(@data)
     rescue Psych::Exception => error
       # catch errors
-      error("cannot parse #{name} bootstrap: #{error}", 1)
+      error "cannot parse #{name} bootstrap: #{error}", 1
     end
 
     # get yaml name

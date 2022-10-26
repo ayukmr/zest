@@ -62,7 +62,7 @@ module Zest
         spinner.success
       rescue => error
         spinner.error
-        error(error) if config.verbose?
+        error error if config.verbose?
       end
     end
 

@@ -5,7 +5,7 @@ module Zest
       def run_config(args)
         configs = yaml_glob.filter(&:config?)
 
-        error('no configs given', 1) if args.empty?
+        error 'no configs given', 1 if args.empty?
 
         args.each do |name|
           # find config by name
@@ -16,7 +16,7 @@ module Zest
             yaml.run_config
             puts
           else
-            error("config not found for `#{name}`", 1)
+            error "config not found for `#{name}`", 1
           end
         end
       end

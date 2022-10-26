@@ -41,7 +41,7 @@ module Zest
             yaml.run_script(script)
             puts
           else
-            error("script `#{script}` not found for `#{name}`", 1)
+            error "script `#{script}` not found for `#{name}`", 1
           end
         end
       end

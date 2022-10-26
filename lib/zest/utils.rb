@@ -42,7 +42,7 @@ def config_path
     return dir if exists?(File.join(dir, '.zest.yml'))
   end
 
-  error('.zest.yml not found', 1)
+  error '.zest.yml not found', 1
 end
 
 # get config glob path

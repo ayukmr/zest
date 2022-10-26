@@ -33,7 +33,7 @@ module Zest
             yaml.run_config
             puts
           else
-            error("config not found for `#{name}`", 1)
+            error "config not found for `#{name}`", 1
           end
         end
       end
