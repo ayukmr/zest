@@ -13,15 +13,15 @@ require 'json'
 require 'json-schema'
 require 'psych'
 
-# tty toolkit
+# visuals
 require 'tty-prompt'
 require 'tty-spinner'
 
-# zest modules
+# modules
 module Zest
 end
 
-# zest lib
+# library
 require 'zest/utils'
 require 'zest/schema'
 require 'zest/run'
