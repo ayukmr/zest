@@ -12,7 +12,7 @@ module Zest
         command, subcommand, *args = argv
 
         # help command
-        help if (command == 'help' && subcommand.nil?) || command.nil?
+        help if (command == 'help' && !subcommand) || !command
 
         Zest::Command.run(command, subcommand, args)
       end

@@ -30,12 +30,12 @@ module Zest
 
         command_hash = commands[command.to_sym]
 
-        if command_hash.nil?
+        if !command_hash
           error "command `#{command}` does not exist", 1
-        elsif subcommand == 'help' || subcommand.nil?
+        elsif subcommand == 'help' || !subcommand
           # show help for command
           commands[:help][command.to_sym][]
-        elsif command_hash[subcommand.to_sym].nil?
+        elsif !command_hash[subcommand.to_sym]
           error "subcommand `#{subcommand}` does not exist for `#{command}`", 1
         else
           # run command
