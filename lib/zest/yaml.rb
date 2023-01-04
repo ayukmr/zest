@@ -11,7 +11,7 @@ module Zest
 
       if config.erb?
         # load with erb
-        data = ERB.new(File.open(@file).read).result
+        data = ERB.new(File.read(@file)).result
         @data = Psych.load(data)
       else
         @data = Psych.load_file(@file)
