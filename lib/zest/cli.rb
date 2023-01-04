@@ -1,7 +1,7 @@
 # load commands
 Dir[File.expand_path(
   File.join('command', '*.rb'), __dir__
-)].sort.each { |file| require file }
+)].each { |file| require file }
 
 module Zest
   # cli for zest
