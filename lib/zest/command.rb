@@ -32,7 +32,7 @@ module Zest
 
         if !command_hash
           error "command `#{command}` does not exist", 1
-        elsif subcommand == 'help' || !subcommand
+        elsif (command != 'help' && subcommand == 'help') || !subcommand
           # show help for command
           commands[:help][command.to_sym][]
         elsif !command_hash[subcommand.to_sym]
