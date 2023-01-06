@@ -43,11 +43,9 @@ module Zest
         end
       end
 
-      private
-
       # run command method
       def run_command(method, args)
-        # pass args if method takes args
+        # pass args if method takes them
         if method.arity.zero?
           method[]
         else
@@ -55,7 +53,7 @@ module Zest
         end
       end
 
-      # glob files into YAML
+      # glob files into yaml
       def yaml_glob
         Dir[glob_path].map do |file|
           Zest::YAML.new(file)
