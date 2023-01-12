@@ -7,7 +7,7 @@ module Zest
 
       args.each do |name|
         # find config by name
-        yaml = configs.find { |yaml| yaml.name == name }
+        yaml = configs.find { |yml| yml.name == name }
 
         if yaml
           # run config

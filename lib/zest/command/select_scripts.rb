@@ -30,10 +30,10 @@ module Zest
 
       puts
 
-      chosen.each do |chosen|
+      chosen.each do |chsn|
         # find script by name
-        name, script = chosen.split(':')
-        yaml = scripts.find { |yaml| yaml.name == name }
+        name, script = chsn.split(':')
+        yaml = scripts.find { |yml| yml.name == name }
 
         if yaml&.script?(script)
           # run script

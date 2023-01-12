@@ -8,8 +8,8 @@ module Zest
       print '  '
 
       # show packages
-      packages.each_with_index do |packages, index|
-        print "#{packages.name.cyan}, "
+      packages.each_with_index do |pkgs, index|
+        print "#{pkgs.name.cyan}, "
 
         if ((index + 1) % 5).zero?
           puts

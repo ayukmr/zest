@@ -8,7 +8,7 @@ module Zest
       args.each do |arg|
         # find script by name
         name, script = arg.split(':')
-        yaml = scripts.find { |yaml| yaml.name == name }
+        yaml = scripts.find { |yml| yml.name == name }
 
         if yaml&.script?(script)
           # run script

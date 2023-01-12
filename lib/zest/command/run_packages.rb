@@ -8,7 +8,7 @@ module Zest
 
         args.each do |name|
           # find packages by name
-          yaml = packages.find { |yaml| yaml.name == name }
+          yaml = packages.find { |yml| yml.name == name }
 
           if yaml
             # run packages
