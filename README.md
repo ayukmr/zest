@@ -1,4 +1,4 @@
-<img src="media/logo.png" alt="Zest logo" width="125" align="right">
+<img src="media/logo.png" alt="zest logo" width="125" align="right">
 
 # `zest` - config bootstrapper
 ### `zest` is a command-line tool which helps with managing config files.
