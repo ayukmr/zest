@@ -58,7 +58,7 @@ module Zest
       spinner.run do |spnr|
         block.call
         spnr.success
-      rescue => error
+      rescue StandardError => error
         spinner.error
         error error if config.verbose?
       end
