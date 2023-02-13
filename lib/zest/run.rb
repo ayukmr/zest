@@ -42,8 +42,6 @@ module Zest
       end
     end
 
-    private
-
     # get status of a block
     def status(message, &block)
       config = Zest::Config.new
