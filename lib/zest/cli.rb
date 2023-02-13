@@ -5,7 +5,7 @@ Dir[File.expand_path(
 
 module Zest
   # cli for zest
-  module Cli
+  module CLI
     class << self
       # run cli with argv
       def run(argv)
