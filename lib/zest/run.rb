@@ -55,9 +55,9 @@ module Zest
         error_mark:   '✗'.red.bold
       )
 
-      spinner.run do |spinner|
+      spinner.run do |spnr|
         block.call
-        spinner.success
+        spnr.success
       rescue => error
         spinner.error
         error error if config.verbose?
