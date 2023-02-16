@@ -13,6 +13,13 @@ class String
   def bold;      "\e[1m#{self}\e[22m" end
   def italic;    "\e[3m#{self}\e[23m" end
   def underline; "\e[4m#{self}\e[24m" end
+
+  # convert home into tilde
+  def tilde
+    sub(Regexp.new(
+      "^#{Regexp.escape(Dir.home)}"
+    ), '~')
+  end
 end
 
 # raise error
@@ -57,7 +64,7 @@ def remove_file(src, dest)
   dir_file = File.join(dest, File.basename(src))
 
   if exists?(dest)
-    status("deleting #{tilde(dest)}") do
+    status("deleting #{dest.tilde}") do
       File.delete(dest)
     end
   end
@@ -65,7 +72,7 @@ def remove_file(src, dest)
   # remove file is dir is provided
   return unless config.force? && exists?(dir_file)
 
-  status("deleting #{tilde(dir_file)}") do
+  status("deleting #{dir_file.tilde}") do
     File.delete(dir_file)
   end
 end
@@ -78,9 +85,4 @@ def traverse(hash, *keys)
   end
 
   hash
-end
-
-# convert home into tilde
-def tilde(path)
-  path.sub(Dir.home, '~')
 end

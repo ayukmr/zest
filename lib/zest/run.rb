@@ -69,7 +69,7 @@ module Zest
       dir = File.expand_path(dir)
       return if Dir.exist?(dir)
 
-      status("creating #{tilde(dir)}") do
+      status("creating #{dir.tilde}") do
         FileUtils.mkdir_p(dir)
       end
     end
@@ -81,7 +81,7 @@ module Zest
         file = File.expand_path(file)
 
         # create and write file
-        status("creating and writing to #{tilde(file)}") do
+        status("creating and writing to #{file.tilde}") do
           File.delete(file) if exists?(file)
           File.write(file, text)
         end
@@ -90,7 +90,7 @@ module Zest
 
         unless File.exist?(file)
           # create file
-          status("creating #{tilde(file)}") do
+          status("creating #{file.tilde}") do
             FileUtils.touch(file)
           end
         end
@@ -106,7 +106,7 @@ module Zest
 
       remove_file(src, dest)
 
-      status("linking #{tilde(src)} to #{tilde(dest)}") do
+      status("linking #{src.tilde} to #{dest.tilde}") do
         FileUtils.ln_s(src, dest)
       end
     end
@@ -120,7 +120,7 @@ module Zest
 
       remove_file(src, dest)
 
-      status("copying #{tilde(src)} to #{tilde(dest)}") do
+      status("copying #{src.tilde} to #{dest.tilde}") do
         FileUtils.cp(src, dest)
       end
     end
