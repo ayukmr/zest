@@ -5,8 +5,7 @@ module Zest
     def initialize
       global_path = File.join(
         XDG::Config.new.home.to_s,
-        'zest',
-        'config.yml'
+        'zest/config.yml'
       )
 
       if exists?(global_path)
