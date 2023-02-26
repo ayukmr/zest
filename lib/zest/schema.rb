@@ -5,7 +5,8 @@ module Zest
       # test bootstrap file against schema
       def bootstrap?(data)
         schema = JSON.parse(File.read(File.expand_path(
-          './schema/bootstrap.json', __dir__
+          './schema/bootstrap.json',
+          __dir__
         )))
 
         JSON::Validator.validate(schema, data)
@@ -14,7 +15,8 @@ module Zest
       # test root config against schema
       def root?(data)
         schema = JSON.parse(File.read(File.expand_path(
-          './schema/root.json', __dir__
+          './schema/root.json',
+          __dir__
         )))
 
         JSON::Validator.validate(schema, data)
@@ -23,7 +25,8 @@ module Zest
       # test global config against schema
       def global?(data)
         schema = JSON.parse(File.read(File.expand_path(
-          './schema/global.json', __dir__
+          './schema/global.json',
+          __dir__
         )))
 
         JSON::Validator.validate(schema, data)
