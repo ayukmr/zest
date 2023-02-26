@@ -21,14 +21,14 @@ module Zest
       def help
         puts <<~HELP
           #{'Usage'.magenta.bold}:
-            #{'zest'.cyan} #{'<COMMAND>'.yellow}
+            #{'zest'.cyan} #{'<command>'.yellow}
 
           #{'Commands'.magenta.bold}:
-            #{'config'.cyan}   #{'<SUBCOMMAND>'.yellow}  interact with configs
-            #{'packages'.cyan} #{'<SUBCOMMAND>'.yellow}  interact with packages
-            #{'script'.cyan}   #{'<SUBCOMMAND>'.yellow}  interact with scripts
+            #{'config'.cyan}   #{'<subcommand>'.yellow}  interact with configs
+            #{'packages'.cyan} #{'<subcommand>'.yellow}  interact with packages
+            #{'script'.cyan}   #{'<subcommand>'.yellow}  interact with scripts
 
-            #{'help'.cyan} #{'<COMMAND>'.yellow}  get help for a command
+            #{'help'.cyan} #{'<command>'.yellow}  get help for a command
             #{'help'.cyan}            show this message
         HELP
 

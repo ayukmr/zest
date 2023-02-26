@@ -5,10 +5,10 @@ module Zest
       # show message
       puts <<~HELP
         #{'Usage'.magenta.bold}:
-          #{'zest script'.cyan} #{'<COMMAND>'.yellow}
+          #{'zest script'.cyan} #{'<command>'.yellow}
 
         #{'Commands'.magenta.bold}:
-          #{'run'.cyan} #{'<SCRIPT>'.yellow}  run script from yaml
+          #{'run'.cyan} #{'<script>'.yellow}  run script from yaml
           #{'select'.cyan}        select scripts from list
           #{'list'.cyan}          list scripts
           #{'help'.cyan}          show this message
