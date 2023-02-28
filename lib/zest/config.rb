@@ -13,10 +13,10 @@ module Zest
           # global config
           @global = Psych.load_file(global_path)
         rescue Psych::Exception
-          error 'malformed global config', 1
+          error 'malformed global config'
         end
 
-        error 'global config does not conform to schema', 1 \
+        error 'global config does not conform to schema' \
           unless Zest::Schema.global?(@global)
       end
 
@@ -26,10 +26,10 @@ module Zest
         # root config
         @root = Psych.load_file(root_path)
       rescue Psych::Exception
-        error 'malformed root config', 1
+        error 'malformed root config'
       end
 
-      error 'root config does not conform to schema', 1 \
+      error 'root config does not conform to schema' \
         unless Zest::Schema.root?(@root)
 
       # use defaults

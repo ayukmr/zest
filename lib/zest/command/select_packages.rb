@@ -32,7 +32,7 @@ module Zest
           yaml.run_packages
           puts
         else
-          error "packages not found for `#{name}`", 1
+          error "packages not found for `#{name}`"
         end
       end
     end

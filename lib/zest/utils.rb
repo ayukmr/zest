@@ -23,9 +23,9 @@ class String
 end
 
 # raise error
-def error(message, exit_code = nil)
+def error(message, exit: true)
   puts "#{'error'.red.bold}: #{message}"
-  exit exit_code if exit_code
+  exit 1 if exit
 end
 
 # run a block with key if key exists
@@ -49,7 +49,7 @@ def config_path
     return dir if exists?(File.join(dir, '.zest.yml'))
   end
 
-  error '.zest.yml not found', 1
+  error '.zest.yml not found'
 end
 
 # get config glob path

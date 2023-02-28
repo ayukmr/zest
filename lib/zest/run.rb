@@ -60,7 +60,7 @@ module Zest
         spnr.success
       rescue StandardError => error
         spinner.error
-        error error if config.verbose?
+        error error, exit: false if config.verbose?
       end
     end
 

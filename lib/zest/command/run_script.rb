@@ -2,7 +2,7 @@ module Zest
   module Command
     # run script from yaml
     def self.run_script(args)
-      error 'no scripts given', 1 if args.empty?
+      error 'no scripts given' if args.empty?
       scripts = yaml_glob.filter(&:scripts?)
 
       args.each do |arg|
@@ -15,7 +15,7 @@ module Zest
           yaml.run_script(script)
           puts
         else
-          error "script `#{script}` not found for `#{name}`", 1
+          error "script `#{script}` not found for `#{name}`"
         end
       end
     end

@@ -3,7 +3,7 @@ module Zest
     class << self
       # run packages from yaml
       def run_packages(args)
-        error 'no packages given', 1 if args.empty?
+        error 'no packages given' if args.empty?
         packages = yaml_glob.filter(&:packages?)
 
         args.each do |name|
@@ -15,7 +15,7 @@ module Zest
             yaml.run_packages
             puts
           else
-            error "packages not found for `#{name}`", 1
+            error "packages not found for `#{name}`"
           end
         end
       end
