@@ -30,7 +30,7 @@ end
 
 # run a block with key if key exists
 def hash_do(hash, key, &block)
-  hash[key].each { |arr| block.call(arr) } if hash.key?(key)
+  hash[key].each { |ary| block.call(ary) } if hash.key?(key)
 end
 
 # check if file exists
