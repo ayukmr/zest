@@ -4,7 +4,7 @@ Dir[File.expand_path(
 )].each { |file| require file }
 
 module Zest
-  # cli for zest
+  # zest cli
   module CLI
     class << self
       # run cli with argv
