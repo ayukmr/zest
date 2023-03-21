@@ -4,10 +4,10 @@ module Zest
     def self.config_help
       # show message
       puts <<~HELP
-        #{'Usage'.magenta.bold}:
+        #{'usage'.magenta.bold}:
           #{'zest config'.cyan} #{'<command>'.yellow}
 
-        #{'Commands'.magenta.bold}:
+        #{'commands'.magenta.bold}:
           #{'run'.cyan} #{'<config>'.yellow}  run config from yaml
           #{'select'.cyan}        run configs from list
           #{'list'.cyan}          list configs

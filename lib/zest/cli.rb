@@ -20,10 +20,10 @@ module Zest
       # show help and exit
       def help
         puts <<~HELP
-          #{'Usage'.magenta.bold}:
+          #{'usage'.magenta.bold}:
             #{'zest'.cyan} #{'<command>'.yellow}
 
-          #{'Commands'.magenta.bold}:
+          #{'commands'.magenta.bold}:
             #{'config'.cyan}   #{'<subcommand>'.yellow}  interact with configs
             #{'packages'.cyan} #{'<subcommand>'.yellow}  interact with packages
             #{'script'.cyan}   #{'<subcommand>'.yellow}  interact with scripts

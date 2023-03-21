@@ -4,10 +4,10 @@ module Zest
     def self.script_help
       # show message
       puts <<~HELP
-        #{'Usage'.magenta.bold}:
+        #{'usage'.magenta.bold}:
           #{'zest script'.cyan} #{'<command>'.yellow}
 
-        #{'Commands'.magenta.bold}:
+        #{'commands'.magenta.bold}:
           #{'run'.cyan} #{'<script>'.yellow}  run script from yaml
           #{'select'.cyan}        select scripts from list
           #{'list'.cyan}          list scripts

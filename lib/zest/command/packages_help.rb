@@ -4,10 +4,10 @@ module Zest
     def self.packages_help
       # show message
       puts <<~HELP
-        #{'Usage'.magenta.bold}:
+        #{'usage'.magenta.bold}:
           #{'zest packages'.cyan} #{'<command>'.yellow}
 
-        #{'Commands'.magenta.bold}:
+        #{'commands'.magenta.bold}:
           #{'run'.cyan} #{'<packages>'.yellow}  run packages from yaml
           #{'select'.cyan}          select packages from list
           #{'list'.cyan}            list packages
