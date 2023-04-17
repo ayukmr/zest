@@ -18,7 +18,7 @@ module Zest
         "#{'run configs'.magenta.bold} –",
         configs.map(&:name),
         help: 'up/down/space/enter',
-        per_page: configs.length
+        per_page: 20
       )
 
       puts

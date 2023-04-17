@@ -18,7 +18,7 @@ module Zest
         "#{'run packages'.magenta.bold} –",
         packages.map(&:name),
         help: 'up/down/space/enter',
-        per_page: packages.length
+        per_page: 20
       )
 
       puts

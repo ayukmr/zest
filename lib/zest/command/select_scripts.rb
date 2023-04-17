@@ -25,7 +25,7 @@ module Zest
         "#{'run scripts'.magenta.bold} –",
         prompt_scripts,
         help: 'up/down/space/enter',
-        per_page: prompt_scripts.length
+        per_page: 20
       )
 
       puts
