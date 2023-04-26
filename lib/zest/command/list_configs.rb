@@ -9,7 +9,7 @@ module Zest
 
       # show configs
       configs.each_with_index do |config, index|
-        print "#{config.name.cyan}, "
+        print "#{config.name.blue}, "
 
         if ((index + 1) % 5).zero?
           puts

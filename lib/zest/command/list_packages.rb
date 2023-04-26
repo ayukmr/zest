@@ -9,7 +9,7 @@ module Zest
 
       # show packages
       packages.each_with_index do |pkgs, index|
-        print "#{pkgs.name.cyan}, "
+        print "#{pkgs.name.blue}, "
 
         if ((index + 1) % 5).zero?
           puts

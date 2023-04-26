@@ -7,7 +7,7 @@ module Zest
       prompt = TTY::Prompt.new(
         interrupt: :exit,
         symbols: {
-          marker:    '>'.cyan,
+          marker:    '>'.blue,
           radio_on:  '[*]',
           radio_off: '[ ]'
         }

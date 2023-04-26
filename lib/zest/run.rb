@@ -48,7 +48,7 @@ module Zest
 
       # spinner for tasks
       spinner = TTY::Spinner.new(
-        ":spinner #{message.cyan}",
+        ":spinner #{message.blue}",
         frames: %w[⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏].map(&:yellow).map(&:bold),
 
         success_mark: '✓'.green.bold,

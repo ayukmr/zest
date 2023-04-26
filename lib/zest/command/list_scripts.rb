@@ -15,7 +15,7 @@ module Zest
           index += 1
 
           # display script
-          print "#{yaml.name.cyan}:#{script.cyan}, "
+          print "#{yaml.name.blue}:#{script.blue}, "
 
           if ((index + 1) % 5).zero?
             puts

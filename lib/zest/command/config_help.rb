@@ -5,13 +5,13 @@ module Zest
       # show message
       puts <<~HELP
         #{'usage'.magenta.bold}:
-          #{'zest config'.cyan} #{'<command>'.yellow}
+          #{'zest config'.blue} #{'<command>'.yellow}
 
         #{'commands'.magenta.bold}:
-          #{'run'.cyan} #{'<config>'.yellow}  run config from yaml
-          #{'select'.cyan}        run configs from list
-          #{'list'.cyan}          list configs
-          #{'help'.cyan}          show this message
+          #{'run'.blue} #{'<config>'.yellow}  run config from yaml
+          #{'select'.blue}        run configs from list
+          #{'list'.blue}          list configs
+          #{'help'.blue}          show this message
       HELP
     end
   end
