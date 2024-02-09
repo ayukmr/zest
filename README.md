@@ -4,7 +4,6 @@
 ### `zest` is a command-line tool which helps with managing config files.
 
 ## Getting Started
-
 ### Creating the config directory
 Start using `zest` by creating a directory:
 ```sh
