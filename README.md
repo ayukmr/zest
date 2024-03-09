@@ -1,7 +1,7 @@
 <img src="media/logo.png" alt="zest logo" width="125" align="right">
 
 # `zest` - config bootstrapper
-### `zest` is a command-line tool which helps with managing config files.
+### `zest` is a command-line tool for managing config files.
 
 ## Getting Started
 ### Creating the config directory
