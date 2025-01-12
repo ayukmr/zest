@@ -1,10 +1,13 @@
-<img src="media/logo.png" alt="zest logo" width="125" align="right">
+<img src="media/logo.png" width="125px">
 
-# `zest` - config bootstrapper
-### `zest` is a command-line tool for managing config files.
+# Zest
+
+Command-line tool for managing config files.
 
 ## Getting Started
+
 ### Creating the config directory
+
 Start using `zest` by creating a directory:
 ```sh
 $ mkdir ~/.cfg
@@ -19,6 +22,7 @@ $ touch .zest.yml
 The `.zest.yml` file signifies a `zest` config directory, along with containing configuration.
 
 ### Adding config files
+
 Let's add the config files for [Vim][vim].
 The core Vim config is stored in `~/.vimrc` and `~/.gvimrc` (for graphical Vim).
 
@@ -36,6 +40,7 @@ $ cp ~/.gvimrc vim/gvimrc
 [vim]: https://wikipedia.org/wiki/Vim_(text_editor)
 
 ### Creating a bootstrap.yml file
+
 To turn the `vim` directory into a `zest` config, we need to add a `bootstrap.yml` file.
 
 First create a `bootstrap.yml` file in the `vim` directory:
@@ -70,6 +75,7 @@ The equivalent to the above YAML in JSON would look like:
 [yaml]: https://wikipedia.org/wiki/YAML
 
 ### Running the config
+
 Let's try running our completed Vim config!
 
 First backup the current `.vimrc` and `.gvimrc`:
@@ -86,5 +92,6 @@ $ zest config run vim
 If you look at `~/.vimrc` and `~/.gvimrc`, they will be symlinked to the files in the config directory!
 
 ## More Information
+
 The `example` directory in this repository contains example config files for `zest`.
 The files have all the settings you can use for configuring `zest`!
